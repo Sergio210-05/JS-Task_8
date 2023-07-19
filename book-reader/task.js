@@ -10,9 +10,8 @@ controlSize.forEach((sizeButton) => {
     })
     sizeButton.classList.toggle('font-size_active')
     let getSize = sizeButton.getAttribute('data-size')
-    let fontSizeClass = (getSize!==null) ? 'book_fs-' + getSize : ''
+    let fontSizeClass = (getSize!==null) ? ' book_fs-' + getSize : ''
     book.className = 'book' + fontSizeClass;
-    console.log(getSize, fontSizeClass, book.className)
-    return false; // спросить про return false в addEventListener
+    return false;
   }
 })
